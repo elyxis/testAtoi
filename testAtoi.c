@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// compil with :  gcc testatoi.c ft_atoi.c
+
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
