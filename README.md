@@ -1,3 +1,3 @@
 ## testAtoi
 
-Un main qui teste la fonction ft_atoi de la libft servant d'exercice dans le cursus 42.
+Des mains de test et des scripts de verification
