@@ -1,6 +1,7 @@
 #include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
+
 int main(void)
 {
     char            *suc;
@@ -46,11 +47,13 @@ int main(void)
        printf("OG     UI_MAX: %d                     \n", INT_MAX);
     ft_printf("|       I_MIN: %d                     \n", INT_MIN);
        printf("OG      I_MIN: %d                     \n", INT_MIN);
+    ft_printf("|          -1: %d                     \n", -1);
        printf("OG         -1: %d                     \n", -1);
     ft_printf("|          42: %d                     \n", 42);
        printf("OG         42: %d                     \n", 42);
     ft_printf("|         -42: %d                     \n", -42);
-       printf("OG        -42: %d                    \n", -42);    ft_printf("--------------|%%i FLAG|--------------\n");
+       printf("OG        -42: %d                     \n", -42);
+    ft_printf("--------------|%%i FLAG|--------------\n");
     ft_printf("|      UI_MAX: %i                     \n", INT_MAX);
        printf("OG     UI_MAX: %i                     \n", INT_MAX);
     ft_printf("|       I_MIN: %i                     \n", INT_MIN);
@@ -62,7 +65,8 @@ int main(void)
     ft_printf("|          42: %i                     \n", 42);
        printf("OG         42: %i                     \n", 42);
     ft_printf("|         -42: %i                     \n", -42);
-       printf("OG        -42: %i                     \n", -42);    ft_printf("--------------|%%u FLAG|--------------\n");
+       printf("OG        -42: %i                     \n", -42);    
+    ft_printf("--------------|%%u FLAG|--------------\n");
     ft_printf("|      UI_MAX: %u                     \n", UINT_MAX);
        printf("OG     UI_MAX: %u                     \n", UINT_MAX);
     ft_printf("|      UI_MAX: %u                     \n", LONG_MAX);
@@ -72,10 +76,13 @@ int main(void)
     ft_printf("|      UL_MAX: %u                     \n", UINT_MAX);
        printf("OG     UL_MAX: %u                     \n", UINT_MAX);
        printf("|       L_MAX: %u                     \n", UINT_MAX);
-       printf("OG      L_MAX: %u                     \n", UINT_MAX);    ft_printf("|           0: %u                     \n", 0);
+       printf("OG      L_MAX: %u                     \n", UINT_MAX);
+    ft_printf("|           0: %u                     \n", 0);
        printf("OG          0: %u                     \n", 0);
     ft_printf("|          42: %u                     \n", 42);
-       printf("OG         42: %u                     \n", 42);    ft_printf("--------------|%%x FLAG|--------------\n");    ft_printf("|       UIMAX: %x                     \n",  2019496700);
+       printf("OG         42: %u                     \n", 42);    
+    ft_printf("--------------|%%x FLAG|--------------\n");    
+    ft_printf("|       UIMAX: %x                     \n",  2019496700);
        printf("OG      UIMAX: %x                     \n",  2019496700);
     ft_printf("|       ULMAX: %x                     \n", ULONG_MAX);
        printf("OG      ULMAX: %x                     \n", ULONG_MAX);
@@ -91,7 +98,8 @@ int main(void)
        printf("OG         42: %x                     \n", 42);
     ft_printf("|         -42: %x                     \n", -42);
        printf("OG        -42: %x                     \n", -42);
-        ft_printf("--------------|%%X FLAG|--------------\n");    ft_printf("|        LMAX: %X                     \n", UINT_MAX);
+    ft_printf("--------------|%%X FLAG|--------------\n");    
+    ft_printf("|        LMAX: %X                     \n", UINT_MAX);
        printf("OG       LMAX: %X                     \n", UINT_MAX);
     ft_printf("|        -val: %X                    \n", -14523);
        printf("OG       -val: %X                    \n", -14523);
@@ -100,7 +108,14 @@ int main(void)
     ft_printf("|          42: %X                     \n", 42);
        printf("OG         42: %X                     \n", 42);
     ft_printf("|          42: %X                     \n", 42);
-       printf("OG         42: %X                     \n\n\n\n", 42);    ft_printf("test %c %d %% %p %s %i %x %X %u\n\n", 'A', 12345607, ptr, NULL, 9876543, 159159, 263526, 1234567);
+       printf("OG         42: %X                     \n\", 42);  
+    ft_printf("--------------|%%nope FLAG|--------------\n");    
+    ft_printf("|        LMAX: %"); // à corriger
+       printf("OG       LMAX: %");
+    ft_printf("\n\n\n");
+	
+    ft_printf("test %c %d %% %p %s %i %x %X %u\n\n", 'A', 12345607, ptr, NULL, 9876543, 159159, 263526, 1234567);
     printf("test %c %d %% %p %s %i %x %X %u", 'A', 12345607, ptr, NULL, 9876543, 159159, 263526, 1234567);
+	
     return (0);
 }
